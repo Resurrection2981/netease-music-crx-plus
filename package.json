@@ -1,8 +1,8 @@
 {
-  "name": "netease-music-crx",
-  "description": "精巧好用的网易云音乐",
+  "name": "netease-music-crx-plus",
+  "description": "网易云音乐-crx-plus",
   "license": "GPL-3.0-only",
-  "version": "5.6.1",
+  "version": "5.7.1",
   "scripts": {
     "build": "node scripts/build.js",
     "start": "node scripts/webserver.js",

@@ -1,8 +1,8 @@
 {
   "name": "网易云音乐",
-  "author": "sigoden@gmail.com",
+  "author": "Jarvisbutler.cc@gmail.com",
   "manifest_version": 2,
-  "homepage_url" : "https://github.com/sigoden/netease-music-crx" ,
+  "homepage_url" : "https://github.com/Resurrection2981/netease-music-crx-plus" ,
   "background": {
     "persistent": true,
     "page": "background.html"
@@ -25,7 +25,30 @@
     "*://*.kuwo.cn/",
     "*://*.migu.cn/"
   ],
+  "commands": {
+    "togglePlaying": {
+      "suggested_key": {
+        "default":"MediaPlayPause"
+      },
+      "description": "MediaPlayPause",
+      "global": true
+    },
+    "playPrev": {
+      "suggested_key": {
+        "default":"MediaPrevTrack"
+      },
+      "description": "MediaPrevTrack",
+      "global": true
+    },
+    "playNext": {
+      "suggested_key": {
+        "default":"MediaNextTrack"
+      },
+      "description": "MediaNextTrack",
+      "global": true
+    }
+  },
   "update_url": "http://clients2.google.com/service/update2/crx",
-  "minimum_chrome_version": "29",
+  "minimum_chrome_version": "35",
   "content_security_policy": "script-src 'self'; object-src 'self'"
 }

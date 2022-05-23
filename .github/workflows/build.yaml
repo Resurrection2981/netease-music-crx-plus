@@ -1,6 +1,7 @@
-name: build
+name: pack
 
-on: [push, pull_request]
+on:
+  workflow_dispatch:
 
 jobs:
   build:
@@ -12,3 +13,16 @@ jobs:
           node-version: '16'
       - run: yarn
       - run: yarn lint
+      - run: yarn build
+      - name: Upload packed crx
+        uses: actions/upload-artifact@v2
+        with:
+          name: "netease-music-crx-plus-*.zip"
+          path: "./"
+      - name: Delete workflow runs
+        uses: Mattraks/delete-workflow-runs@v2
+        with:
+          token: ${{ secrets.AUTOMATIC_RELEASE_TOKEN }}
+          repository: ${{ github.repository }}
+          retain_days: 0
+          keep_minimum_runs: 0
