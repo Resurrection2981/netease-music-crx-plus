@@ -1,6 +1,6 @@
 ## 网易云音乐
 
-![应用截图](https://user-images.githubusercontent.com/4012553/140094889-71088388-7d10-47b2-8e2d-3c306dc0160f.png)
+![应用截图](/preview.png)
 
 ![build](https://github.com/Resurrection2981/netease-music-crx-plus/actions/workflows/build.yaml/badge.svg)
 
@@ -9,6 +9,12 @@
 *   圆形图标
 *   全局媒体快捷键，“播放/暂停、切歌”
 *   持续更新。。。
+
+## TodoList
+
+*   跟随 Chrome timeline，升级到 Manifest 到 V3
+*   可切换替换源
+*   可设置快捷键
 
 ## 功能
 
@@ -21,7 +27,7 @@
 *   音乐云盘
 *   私人歌单
 
-\> ✨ 碰到本来不能播放的VIP、无版权歌曲居然能正常播放时，不要惊讶，感谢咪咕、酷我的公开曲库
+&gt; ✨ 碰到本来不能播放的VIP、无版权歌曲居然能正常播放时，不要惊讶，感谢咪咕、酷我的公开曲库
 
 ## 安装
 

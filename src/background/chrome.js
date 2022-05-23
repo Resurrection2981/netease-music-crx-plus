@@ -15,6 +15,7 @@ export function init() {
   initMessageHandler();
   initRequestHook();
   initResponseHook();
+  initShortcutKey();
 }
 
 export function sendToPopup(data) {
@@ -229,4 +230,21 @@ function initResponseHook() {
     },
     ["responseHeaders", "blocking", "extraHeaders"]
   );
+}
+
+function initShortcutKey() {
+  chrome.commands.onCommand.addListener((command) => {
+    switch (command) {
+      case "togglePlaying":
+        storeUtils.togglePlaying();
+        break;
+      case "playPrev":
+        storeUtils.playPrev();
+        break;
+      case "playNext":
+        storeUtils.playNext();
+        break;
+      default:
+    }
+  });
 }
