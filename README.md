@@ -26,6 +26,9 @@
     理论上支持所有 Chromium 内核浏览器
 *   通过Chrome Web Store安装，支持跨 Google 账号同步扩展（待上传）
 *   手动下载 [` 压缩包 `](https://github.com/Resurrection2981/netease-music-crx-plus/releases) 解压，在 `扩展程序` 里打开 "开发者模式" 选择 "加载已解压的扩展程序"
+*   
+    ` "加载已解压的扩展程序" 的安装方式不能删除解压后的文件夹`
+
 ![image](https://user-images.githubusercontent.com/45873933/169927521-e36b8c7b-34fe-4499-830d-fdef2208a004.png)
 
 ![image](https://user-images.githubusercontent.com/45873933/169930308-4aa2bce8-f755-4dcd-a696-4178bb315961.png)
